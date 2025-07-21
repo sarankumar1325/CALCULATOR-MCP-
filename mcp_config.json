@@ -1,0 +1,48 @@
+{
+  "mcpServers": {
+    "calculator": {
+      "command": "python",
+      "args": ["calculator_server.py"],
+      "cwd": ".",
+      "description": "A simple calculator server that provides basic math operations",
+      "serverInfo": {
+        "name": "calculator-server",
+        "version": "1.0.0"
+      },
+      "tools": [
+        {
+          "name": "add",
+          "description": "Add two numbers together",
+          "parameters": {
+            "a": "number",
+            "b": "number"
+          }
+        },
+        {
+          "name": "subtract", 
+          "description": "Subtract second number from first",
+          "parameters": {
+            "a": "number",
+            "b": "number"
+          }
+        },
+        {
+          "name": "multiply",
+          "description": "Multiply two numbers",
+          "parameters": {
+            "a": "number", 
+            "b": "number"
+          }
+        },
+        {
+          "name": "divide",
+          "description": "Divide first number by second",
+          "parameters": {
+            "a": "number",
+            "b": "number"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "mcp-calculator-server",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server providing calculator functionality",
+  "main": "calculator_server.py",
+  "scripts": {
+    "start": "python start_server.py",
+    "test": "python test_calculator.py",
+    "ui": "streamlit run streamlit_app.py",
+    "demo": "python launch_demo.py"
+  },
+  "keywords": ["mcp", "calculator", "server", "protocol"],
+  "author": "MCP Demo",
+  "license": "MIT",
+  "dependencies": {
+    "python": ">=3.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "mcp": {
+    "configFile": "mcp_config.json",
+    "serverCommand": "python calculator_server.py"
+  }
+}
